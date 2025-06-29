@@ -36,17 +36,6 @@
       margin-bottom: 2.1rem;
       font-weight: 400;
     }
-    #my-did-agent {
-      margin-top: 0;
-      min-width: 260px;
-      min-height: 420px;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
     @media (max-width: 600px) {
       .container {
         padding: 0.5rem 0.1rem;
@@ -56,10 +45,6 @@
       .title {
         font-size: 1.12rem;
       }
-      #my-did-agent {
-        min-width: 160px;
-        min-height: 300px;
-      }
     }
   </style>
 </head>
@@ -68,20 +53,20 @@
     <div class="title">Welcome! I’m Sky, Your Services Sales Expert</div>
     <div class="subtitle">
       I'm here to help you explore our full range of IT and digital services.<br><br>
-      Whether you're seeking expert advice, detailed information, or tailored recommendations, just start a conversation below.<br><br>
+      Whether you're seeking expert advice, detailed information, or tailored recommendations, just start a conversation using the chat widget.<br><br>
       Ask me anything—I'm ready to provide valuable insights, answer your questions, and guide you to the solutions that best fit your needs.
     </div>
-    <!-- This is the target div the agent will use -->
-    <div id="my-did-agent"></div>
   </div>
+  <!-- D-ID Floating Widget Embed -->
   <script type="module"
     src="https://agent.d-id.com/v2/index.js"
-    data-mode="full"
+    data-mode="fabio"
     data-client-key="Z29vZ2xlLW9hdXRoMnwxMTY2OTQwMTcyMDE4NzMzNzIzMTY6c2dvdzFITTFuWGFYWFNFaXlCNDQ4"
     data-agent-id="v2_agt_DI1HaBIQ"
     data-name="did-agent"
     data-monitor="true"
-    data-target-id="my-did-agent">
+    data-orientation="horizontal"
+    data-position="right">
   </script>
 </body>
 </html>
